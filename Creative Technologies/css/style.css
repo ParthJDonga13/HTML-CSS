@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@800&display=swap');
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: black;
+}
+
+.custom-container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo-part a {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.logo-part a img {
+    width: auto;
+    height: 52px;
+}
+
+.navigations-main a {
+    margin-left: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.4s all ease;
+}
+
+.navigations-main a:hover {
+    transition: 0.4s all ease;
+    color: #77a1e2;
+}
+
+.Banner-img-main {
+    background: url(../images/e-learning-online-business-presentation-meeting-concept.jpg) no-repeat;
+}
+
+.Banner-img-product {
+    background: url(../images/top-view-person-writing-laptop-with-copy-space.jpg) no-repeat;
+}
+
+.Banner-img-about {
+    background: url(../images/banner-img.jpg) no-repeat;
+}
+
+.Banner-img-contact {
+    background: url(../images/top-view-business-man-hands-working-laptop-tablet-pc-wooden-desk.jpg) no-repeat;
+}
+
+.Banner-img-main,
+.Banner-img-product,
+.Banner-img-about,
+.Banner-img-contact {
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.Banner-img-main::before,
+.Banner-img-product::before,
+.Banner-img-about::before,
+.Banner-img-contact::before {
+    position: absolute;
+    content: '';
+    background: #000;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.Banner-img-main .heading,
+.Banner-img-product .heading,
+.Banner-img-about .heading,
+.Banner-img-contact .heading {
+    font-size: 50px;
+    color: #fff;
+    z-index: 9;
+    margin: 0;
+    line-height: 70px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-family: 'Shippori Mincho', sans-serif;
+}
+
+.welcom-section {
+    display: flex;
+    padding: 70px 0px;
+}
+
+.welcom-section .left-col {
+    width: 50%;
+}
+
+.welcom-section .right-col {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.heading {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 500;
+}
+
+.grid-main-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.small-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.inner-grid-main p {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+.our-serivices {
+    background: url(../images/our-service.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.our-serivices::before {
+    position: absolute;
+    content: '';
+    background: #000;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.our-serivices .heading {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    z-index: 9;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.second-grid-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.second-grid-main .inner-grid-main {
+    background: #fff;
+    position: relative;
+    z-index: 9;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px #696767;
+    text-align: center;
+}
+
+.second-grid-main .inner-grid-main span.small-heading {
+    display: block;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 22px;
+    color: #14b2ff;
+}
+
+.second-grid-main .inner-grid-main p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.second-grid-main .inner-grid-main img {
+    width: 66px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+footer.footer-main {
+    background: #000;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.logo-div a img {
+    width: auto;
+    height: 52px;
+    margin-left: 25px;
+}
+
+.logo-div a {
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer.footer-main .navigations-main a {
+    color: #fff;
+}
+
+footer.footer-main .navigations-main a:hover {
+    color: #77a1e2;
+}
+
+.products-info {
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: #8b77dc;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contactus {
+    background: darkcyan;
+}
+
+.contactus .heading {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 17px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.first-about-row p,
+.second-about-row p {
+    font-size: 23px;
+    line-height: 30px;
+}
+
+@media (max-width:1150px) {
+    .custom-container {
+        width: 90%;
+    }
+    .welcom-section .left-col img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .custom-container {
+        width: 90%;
+    }
+    .welcom-section .left-col img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .Banner-img-main,
+    .Banner-img-product,
+    .Banner-img-about,
+    .Banner-img-contact {
+        height: 460px;
+    }
+    .welcom-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .welcom-section .left-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .welcom-section .right-col {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .second-grid-main {
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.table-scroll {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+table.product-table-main {
+    border: 1px solid #ccc;
+}
+
+table.product-table-main tbody tr td {
+    padding: 20px 0px;
+    font-size: 14px;
+}
+
+table.product-table-main tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.products-info {
+    margin-top: 50px;
+}
+
+table.product-table-main tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.product-table-main img {
+    width: 80px;
+}
+
+button.btn {
+    background: #6039ff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s all ease;
+}
+
+button.btn:hover {
+    background: #753030;
+    transition: 0.4s all ease;
+}
+
+@media (max-width:1200px) {
+    .table-scroll {
+        width: 100%;
+        overflow: scroll;
+        margin-bottom: 50px;
+    }
+    table.product-table-main {
+        width: 1200px;
+        overflow: auto;
+    }
+}
+
+.send-enquiry-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comman-div label.label-mani {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: red;
+}
+
+.comman-div input[type="text"],
+.comman-div textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 1px solid #cccc;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+.form-send-enquriy button {
+    background: #109ee2;
+    color: #fff;
+    border: none;
+    padding: 17px 45px;
+    line-height: 1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.form-send-enquriy {
+    width: 500px;
+    margin-bottom: 80px;
+}
+
+.google-map iframe {
+    width: 100%;
+}
+
+.second-about-row .right-col {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.second-about-row {
+    padding-top: 0;
+}
+
+@media (max-width:991px) {
+    .second-about-row {
+        flex-direction: column-reverse;
+    }
+    .second-about-row .right-col {
+        margin-right: 0px;
+    }
+}

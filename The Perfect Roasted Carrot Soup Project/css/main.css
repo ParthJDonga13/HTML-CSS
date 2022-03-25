@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.header-section {
+    background: url(../images/fresh-carrots.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.header-section:before {
+    position: absolute;
+    content: '';
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+.container-custom {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    font-weight: 600;
+    margin: 0;
+    line-height: 70px;
+}
+
+.description {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h2,h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #ff8300;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.grid-system-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-bottom: 70px;
+    grid-column-gap: 30px;
+}
+
+.grid-system-main .inner-grid-main {
+    padding: 50px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 0px 5px #ccc;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.grid-system-main .inner-grid-main span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #f1823b;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.row-main {
+    display: flex;
+}
+
+.row-main .left-col {
+    width: 50%;
+}
+
+.row-main .righ-col {
+    width: 50%;
+}
+
+.row-main img {
+    width: 100%;
+    height: 470px;
+    object-fit: scale-down;
+}
+
+ul.in-grad {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.in-grad li {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+ul.in-grad li span {
+    color: darkgray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+ul.in-grad li:before {
+    position: absolute;
+    content: '';
+    background: #f1823b;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 8px;
+    border-radius: 100%;
+}
+
+section.gradients {
+    padding-bottom: 100px;
+}
+
+.notes {
+    padding-top: 0px;
+    padding-bottom: 60px;
+}
+
+.nutrition-grid-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nutrition-grid-main .inner-grid-system {
+    background: #f9f9f9;
+    padding: 30px;
+    box-shadow: 0px 0px 3px #ccc;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.nutrition-grid-main .inner-grid-system span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1823b;
+}
